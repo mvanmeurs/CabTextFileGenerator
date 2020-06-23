@@ -32,7 +32,7 @@ foreach ($item in $Dir) {
         $fullname = $item.FullName
         $beginningindex = "$fullname".IndexOf("src")
         $endingindex = "$fullname".LastIndexOf($item)
-        $mydir = "$fullname".Substring($beginningindex + 3, $endingindex - $beginningindex - 1)
+        $mydir = "$fullname".Substring($beginningindex + 4, $endingindex - $beginningindex - 5)
 
         #if we changed directories, add a new line with the set destination dir command with the relative file path
         if(!($mydir -eq $lastdir)){
